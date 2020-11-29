@@ -15,10 +15,10 @@
                 Vous êtes identifié comme un administrateur. Pour modifier le score de quelqu'un, cliquez sur le bouton "Éditer" de la ligne correspondante à son score.<br>
                 Pour ajouter quelqu'un au tableau des scores, cliquez sur le bouton "Nouveau".
             </div>
+            <div class="container">
+                <a class="btn btn-success" href="/new/?token={{token}}">Nouveau</a>
+            </div>
         {{/if}}
-        <div class="container">
-            <a class="btn btn-success" href="/new/?token={{token}}">Nouveau</a>
-        </div>
         <div class="container">
             <table class="table table-striped {{#if admin}}table-hover{{/if}} scoreboard" >
                 <thead>
