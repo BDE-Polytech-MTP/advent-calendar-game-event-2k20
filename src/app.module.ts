@@ -8,9 +8,7 @@ import { UsersModule } from './users.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      username: 'postgres',
-      password: 'postgres',
-      database: 'advent-scores',
+      url: process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/advent-scores',
       entities: [User],
       synchronize: true,
     }),
